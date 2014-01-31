@@ -1,0 +1,9 @@
+{
+  "name": "doge-card",
+  "version": "0.0.1",
+  "description": "wow such greeting",
+  "dependencies": {
+    "nodemon": "~1.0.14",
+    "express": "~3.4.8"
+  }
+}

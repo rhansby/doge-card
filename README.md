@@ -7,7 +7,11 @@ Doge Card
 
 ### Much install
 
-    $ npm install express nodemon && echo wow
+first, very need node.js: [http://nodejs.org/download/](http://nodejs.org/download/ "wow")
+
+then:
+
+    $ npm install && echo wow
 
 #### Very license
 * Wow such opensource
