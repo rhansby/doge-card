@@ -5,13 +5,15 @@ Doge Card
 * Such send joy
 * Very occasion
 
-### Much install
+### Much install & use
 
 first, very need node.js: [http://nodejs.org/download/](http://nodejs.org/download/ "wow")
 
 then:
 
     $ npm install && echo wow
+
+    $ nodemon dogecard.js
 
 #### Very license
 * Wow such opensource
