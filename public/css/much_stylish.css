@@ -47,3 +47,11 @@ footer {
     right: 10px;
     text-align: right;
 }
+
+#dogecoin-click {
+    color: blue;
+    cursor: pointer;
+}
+#dogecoin-address {
+    display: none;
+}
