@@ -1,5 +1,8 @@
 body {
     background-color: blanchedalmond;
+}
+
+body, button {
     font-family: 'Comic Sans MS', 'Comic Sans', Chalkboard, Arial, sans-serif;
 }
 
@@ -38,6 +41,32 @@ h1, h2 {
 
 .buttons {
     text-align: center;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16pt;
+    padding: 10px 16px;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.create {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.view {
+    background-color: #428bca;
+    border-color: #357ebd;
 }
 
 footer {
