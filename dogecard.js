@@ -16,3 +16,13 @@ much_http.createServer(such_app).listen(such_app.get('port'), function() {
 such_app.get('/', function (req, res) {
     res.render('home');
 });
+
+such_app.get('/view/:such_card_id', function (req, res) {
+    console.log(req.params.such_card_id);
+    res.render('card', {
+        to: 'shibe',
+        from: 'doge',
+        message: 'wow very greeting',
+        background: ''
+    });
+});
