@@ -117,6 +117,9 @@ footer {
         margin: 60px auto;
         width: 1000px;
         height: 600px;
+        -webkit-transform: rotate(-2deg);
+           -moz-transform: rotate(-2deg);
+                transform: rotate(-2deg);
     }
     .card-header {
         font-size: 36pt;
