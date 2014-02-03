@@ -57,7 +57,6 @@ h1, h2 {
 }
     .doge-card {
         position: absolute;
-        position: absolute;
         right: -85px;
         top: -50px;
     }
@@ -170,17 +169,104 @@ footer {
    @-moz-keyframes rotate { 100% {    -moz-transform: rotateY(360deg); } }
         @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
 
+@media (max-width: 1210px) {
+    /* Wow, all numbers are 0.8 of original */
+    /* TODO: Consider using a preprocessor */
+    .card-single {
+        background-size: 800px 480px;
+        width: 800px;
+        height: 480px;
+    }
+        .card-header {
+            font-size: 29pt;
+            top: 40px;
+            left: 212px;
+        }
+            .card-from {
+                margin-left: 40px;
+            }
+        .card-body {
+            font-size: 30pt;
+            top: 208px;
+            left: 40px;
+            width: 560px;
+            height: 240px;
+        }
+    .doge {
+        background-size: 280px;
+        width: 320px;
+        height: 320px;
+    }
+        .doge-card {
+            right: -68px;
+            top: -40px;
+        }
+            .prop-valentine {
+                background-size: 160px;
+                width: 160px;
+                height: 160px;
+                top: 74px;
+                left: 18px;
+            }
+}
+
+@media (max-width: 1010px) {
+    /* Wow, all numbers are 0.625 of above, 0.5 of original */
+    .card-single {
+        background-size: 500px 300px;
+        width: 500px;
+        height: 300px;
+    }
+        .card-header {
+            font-size: 18pt;
+            top: 25px;
+            left: 133px;
+        }
+            .card-from {
+                margin-left: 25px;
+            }
+        .card-body {
+            font-size: 19pt;
+            top: 130px;
+            left: 25px;
+            width: 350px;
+            height: 150px;
+        }
+    .doge {
+        background-size: 175px;
+        width: 200px;
+        height: 200px;
+    }
+        .doge-card {
+            right: -43px;
+            top: -25px;
+        }
+            .prop-valentine {
+                background-size: 100px;
+                width: 100px;
+                height: 100px;
+                top: 46px;
+                left: 11px;
+            }
+}
+
+@media (max-width: 610px) {
+    .card-single {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: -50px;
+        -webkit-transform: rotate(-91deg);
+           -moz-transform: rotate(-91deg);
+                transform: rotate(-91deg);
+    }
+}
+
 @media (max-width: 450px) {
     .header {
         font-size: 30pt;
     }
     .sub-header {
         font-size: 16pt;
-    }
-    .doge {
-        background-size: 200px;
-        width: 220px;
-        height: 220px;
     }
     .btn {
         display: block;
