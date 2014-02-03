@@ -6,6 +6,7 @@ var very_express = require('express'),
 such_app.engine('handlebars', so_handlebars({defaultLayout: 'main'}));
 such_app.set('view engine', 'handlebars');
 
+such_app.use(very_express.bodyParser());
 such_app.use(very_express.static(__dirname + '/public'));
 such_app.set('port', process.env.PORT || 3000);
 
@@ -26,4 +27,25 @@ such_app.get('/view/:such_card_id', function (req, res) {
         background: '',
         theme: 'valentine'
     });
+});
+
+such_app.get('/create', function (req, res) {
+    res.render('create');
+});
+
+such_app.post('/create', function (req, res) {
+    console.log(req.body);
+    var body = req.body;
+    if (body.theme && body.to && body.from && body.message) {
+        res.render('card', {
+            to: body.to,
+            from: body.from,
+            message: body.message,
+            background: '',
+            theme: 'valentine'
+        });
+    }
+    else {
+        res.render('create');
+    }
 });
