@@ -15,6 +15,7 @@ a {
 
 h1, h2 {
     text-align: center;
+    text-shadow: #111 2px 1px 1px;
 }
 
 .header {
@@ -22,7 +23,6 @@ h1, h2 {
     font-size: 100pt;
     margin-top: 20px;
     margin-bottom: 5px;
-    text-shadow: #111 2px 1px 1px;
 }
 
 .sub-header {
@@ -85,3 +85,12 @@ footer {
 #dogecoin-address {
     display: none;
 }
+
+.rotate {
+    -webkit-animation: rotate 3s linear infinite;
+       -moz-animation: rotate 3s linear infinite;
+            animation: rotate 3s linear infinite;
+}
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotateY(360deg); } }
+   @-moz-keyframes rotate { 100% {    -moz-transform: rotateY(360deg); } }
+        @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }

@@ -10,7 +10,6 @@ window.onload = function() {
     // ~ Very thanks to http://indogewetrust.com/ for inspiration ~
     var flash_elements = document.getElementsByClassName('flash');
     var flash = function() {
-
         var r = ~~(Math.random() * 255),
             g = ~~(Math.random() * 255),
             b = ~~(Math.random() * 255);
