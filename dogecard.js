@@ -22,7 +22,8 @@ such_app.get('/view/:such_card_id', function (req, res) {
     res.render('card', {
         to: 'shibe',
         from: 'doge',
-        message: 'wow very greeting',
-        background: ''
+        message: 'wow very greeting. such love. wow. many holiday <3 <3 <3',
+        background: '',
+        theme: 'valentine'
     });
 });

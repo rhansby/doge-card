@@ -34,11 +34,17 @@ h1, h2 {
 .doge {
     background-image: url(/img/doge.png);
     background-repeat: no-repeat;
-    background-size: 600px 600px;
-    width: 600px;
-    height: 600px;
-    margin: -110px auto -80px;
+    background-size: 350px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
+    .doge-card {
+        position: absolute;
+        position: absolute;
+        right: -85px;
+        top: -50px;
+    }
 
 .buttons {
     text-align: center;
@@ -85,6 +91,38 @@ footer {
 #dogecoin-address {
     display: none;
 }
+
+.card {
+    color: red;
+    background-image: url(/img/valentine.jpg);
+    -webkit-box-shadow: 3px 3px 12px 0 #555;
+       -moz-box-shadow: 3px 3px 12px 0 #555;
+            box-shadow: 3px 3px 12px 0 #555;
+    position: relative;
+}
+    .card-single {
+        margin: 60px auto;
+        width: 1000px;
+        height: 600px;
+    }
+    .card-header {
+        font-size: 36pt;
+        position: absolute;
+        top: 50px;
+        left: 265px;
+    }
+        .card-from {
+            margin-left: 50px;
+        }
+    .card-body {
+        font-size: 38pt;
+        overflow-y: hidden;
+        position: absolute;
+        top: 260px;
+        left: 50px;
+        width: 700px;
+        height: 300px;
+    }
 
 .rotate {
     -webkit-animation: rotate 3s linear infinite;
