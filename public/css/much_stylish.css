@@ -36,7 +36,7 @@ h1, h2 {
 
 .header {
     color: cyan;
-    font-size: 100pt;
+    font-size: 60pt;
     margin-top: 20px;
     margin-bottom: 5px;
 }
@@ -94,6 +94,9 @@ h1, h2 {
          -o-user-select: none;
             user-select: none;
 }
+    a.btn:visited {
+        color: #fff;
+    }
 
 .create {
     background-color: #5cb85c;
@@ -166,3 +169,26 @@ footer {
 @-webkit-keyframes rotate { 100% { -webkit-transform: rotateY(360deg); } }
    @-moz-keyframes rotate { 100% {    -moz-transform: rotateY(360deg); } }
         @keyframes rotate { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+@media (max-width: 450px) {
+    .header {
+        font-size: 30pt;
+    }
+    .sub-header {
+        font-size: 16pt;
+    }
+    .doge {
+        background-size: 200px;
+        width: 220px;
+        height: 220px;
+    }
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 180px;
+    }
+    footer {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
