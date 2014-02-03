@@ -63,7 +63,7 @@ h1, h2 {
     text-align: center;
 }
 
-button {
+.btn, button {
     border: 1px solid transparent;
     border-radius: 6px;
     color: #fff;
