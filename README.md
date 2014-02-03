@@ -7,14 +7,15 @@ Doge Card
 
 ### Much install & use
 
-first, very need node.js: [http://nodejs.org/download/](http://nodejs.org/download/ "wow")
+First, you need node.js: [http://nodejs.org/download/](http://nodejs.org/download/ "wow"),
+and mongoDB: [http://www.mongodb.org/downloads/](http://www.mongodb.org/downloads "wow such webscale")
 
-then:
+Then:
 
-    $ npm install && echo wow
+    $ npm install && npm install -g nodemon && echo wow
 
-    $ nodemon dogecard.js
+    $ (mongod &) && nodemon dogecard.js
 
 #### Very license
 * Wow such opensource
-* us shibes gotta help each other out! License is MIT, so you can do whatever you want with the code
+* Us shibes gotta help each other out! License is MIT, so you can do whatever you want with the code.

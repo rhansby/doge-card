@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "wow such greeting",
   "dependencies": {
+    "mongoose": "~3.8.6",
     "nodemon": "~1.0.14",
     "express": "~3.4.8",
     "express3-handlebars": "~0.5.0"
