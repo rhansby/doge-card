@@ -45,6 +45,19 @@ h1, h2 {
         right: -85px;
         top: -50px;
     }
+        .prop-valentine {
+            background-image: url(/img/prop-valentine.png);
+            background-repeat: no-repeat;
+            background-size: 200px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 93px;
+            left: 23px;
+            -webkit-transform: rotate(15deg);
+               -moz-transform: rotate(15deg);
+                    transform: rotate(15deg);
+        }
 
 .buttons {
     text-align: center;
