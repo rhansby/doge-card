@@ -46,6 +46,10 @@ var generateRandomID = function() {
     return id;
 }
 
+var themeToTitle = {
+    valentine: 'Wow so happy valentine\'s day!!!'
+}
+
 
 // Wow, rest of app:
 such_app.engine('handlebars', so_handlebars({defaultLayout: 'main'}));
@@ -75,6 +79,7 @@ such_app.get('/view/:such_card_id', function (req, res) {
             var card = cards[0];
             res.render('card', {
                 theme: card.theme,
+                title: themeToTitle[card.theme],
                 to: card.to,
                 from: card.from,
                 message: card.message
@@ -88,8 +93,8 @@ such_app.get('/create', function (req, res) {
 });
 
 such_app.post('/create', function (req, res) {
-    console.log(req.body);
     var body = req.body;
+    // TODO: validate body.theme further
     if (body.theme && body.to && body.from && body.message) {
         body.id = generateRandomID();
         var card = new Card(body);
