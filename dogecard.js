@@ -107,3 +107,7 @@ such_app.post('/create', function (req, res) {
         res.render('create');
     }
 });
+
+such_app.get('*', function(req, res){
+    res.status(404).render('404');
+});
