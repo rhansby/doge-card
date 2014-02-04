@@ -251,17 +251,35 @@ footer {
 }
 
 @media (max-width: 610px) {
-    .card-single {
-        margin-top: 150px;
-        margin-bottom: 150px;
-        margin-left: -50px;
-        -webkit-transform: rotate(-91deg);
-           -moz-transform: rotate(-91deg);
-                transform: rotate(-91deg);
+    .card {
+        background-image: url(/img/valentine-portrait.jpg);
     }
+        .card-single {
+            background-size: 300px 500px;
+            margin: 60px auto;
+            width: 300px;
+            height: 500px;
+        }
+        .card-header {
+            top: 120px;
+            left: 25px;
+        }
+            .card-from {
+                margin-left: 25px;
+            }
+        .card-body {
+            top: 220px;
+            left: 25px;
+            width: 250px;
+            height: 250px;
+        }
 }
 
 @media (max-width: 450px) {
+    body {
+        margin: 0;
+    }
+
     .header {
         font-size: 30pt;
     }
@@ -276,5 +294,17 @@ footer {
     footer {
         text-align: center;
         margin-top: 50px;
+    }
+
+    .card-single {
+        -webkit-transform: rotate(0);
+           -moz-transform: rotate(0);
+                transform: rotate(0);
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        overflow-x: hidden; /* Wow such disgusting hack */
     }
 }
