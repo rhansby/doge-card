@@ -125,6 +125,11 @@ footer {
     display: none;
 }
 
+form {
+    margin: auto;
+    width: 50%;
+}
+
 .card {
     color: red;
     background-image: url(/img/valentine.jpg);
