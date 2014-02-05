@@ -71,9 +71,8 @@ such_app.get('/view/:such_card_id', function (req, res) {
     console.log(req.params.such_card_id);
 
     Card.find({id: req.params.such_card_id}, function(error, cards) {
-        if (! cards) {
-            // TODO: Proper 404.
-            res.send('404');
+        if (cards.length < 1) {
+            res.render('404');
         }
         else {
             var card = cards[0];
@@ -98,9 +97,9 @@ such_app.post('/create', function (req, res) {
     if (body.theme && body.to && body.from && body.message) {
         body.id = generateRandomID();
         var card = new Card(body);
-        card.save();
-
-        res.redirect('/view/' + body.id);
+        card.save(function() {
+            res.redirect('/view/' + body.id);
+        });
     }
     else {
         // TODO: Indicate failure.
