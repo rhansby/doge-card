@@ -29,6 +29,10 @@ a {
     margin: 0 auto -70px;
 }
 
+.dogelike {
+    display: inline-block;
+}
+
 h1, h2 {
     text-align: center;
     text-shadow: #111 2px 1px 1px;
