@@ -64,13 +64,23 @@ h1, h2 {
         right: -85px;
         top: -50px;
     }
+        .prop {
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+        .prop-birthday {
+            background-image: url(/img/prop-birthday.png);
+            background-size: 143px 219px;
+            width: 143px;
+            height: 219px;
+            top: -79px;
+            left: 113px;
+        }
         .prop-valentine {
             background-image: url(/img/prop-valentine.png);
-            background-repeat: no-repeat;
             background-size: 200px;
             width: 200px;
             height: 200px;
-            position: absolute;
             top: 93px;
             left: 23px;
             -webkit-transform: rotate(15deg);
@@ -135,8 +145,6 @@ form {
 }
 
 .card {
-    color: red;
-    background-image: url(/img/valentine.jpg);
     -webkit-box-shadow: 3px 3px 12px 0 #555;
        -moz-box-shadow: 3px 3px 12px 0 #555;
             box-shadow: 3px 3px 12px 0 #555;
@@ -150,24 +158,32 @@ form {
            -moz-transform: rotate(-2deg);
                 transform: rotate(-2deg);
     }
-    .card-header {
-        font-size: 36pt;
-        position: absolute;
-        top: 50px;
-        left: 265px;
+    .card-theme-birthday {
+        background-image: url(/img/birthday.jpg);
+        color: white;
     }
-        .card-from {
-            margin-left: 50px;
+    .card-theme-valentine {
+        background-image: url(/img/valentine.jpg);
+        color: red;
+    }
+        .card-header {
+            font-size: 36pt;
+            position: absolute;
+            top: 50px;
+            left: 265px;
         }
-    .card-body {
-        font-size: 38pt;
-        overflow-y: hidden;
-        position: absolute;
-        top: 260px;
-        left: 50px;
-        width: 700px;
-        height: 300px;
-    }
+            .card-from {
+                margin-left: 50px;
+            }
+        .card-body {
+            font-size: 38pt;
+            overflow-y: hidden;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+            width: 700px;
+            height: 300px;
+        }
 
 .rotate {
     -webkit-animation: rotate 3s linear infinite;
@@ -210,6 +226,13 @@ form {
             right: -68px;
             top: -40px;
         }
+            .prop-birthday {
+                background-size: 114px 175px;
+                width: 114px;
+                height: 175px;
+                top: -63px;
+                left: 90px;
+            }
             .prop-valentine {
                 background-size: 160px;
                 width: 160px;
@@ -250,6 +273,13 @@ form {
             right: -43px;
             top: -25px;
         }
+            .prop-birthday {
+                background-size: 72px 110px;
+                width: 72px;
+                height: 110px;
+                top: -40px;
+                left: 57px;
+            }
             .prop-valentine {
                 background-size: 100px;
                 width: 100px;
@@ -260,7 +290,10 @@ form {
 }
 
 @media (max-width: 610px) {
-    .card {
+    .card-theme-birthday {
+        background-image: url(/img/birthday-portrait.jpg);
+    }
+    .card-theme-valentine {
         background-image: url(/img/valentine-portrait.jpg);
     }
         .card-single {

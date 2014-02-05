@@ -2,23 +2,24 @@
 
 <form action="" method="POST">
     <label for="theme">Theme:</label>
-    <select name="theme" id="theme">
-      <option value="valentine">Very Valentine's Day</option>
+    <select name="theme" id="theme" required>
+        <option value="birthday">So Happy Birfday</option>
+        <option value="valentine">Very Valentine's Day</option>
     </select>
     <br>
 
     <label for="to">To:</label>
-    <input type="text" name="to" id="to">
+    <input type="text" name="to" id="to" required>
     <br>
 
     <label for="from">From:</label>
-    <input type="text" name="from" id="from">
+    <input type="text" name="from" id="from" required>
     <br>
 
     <label for="message">Message:</label>
     <br>
-    <textarea name="message" id="message" rows="8" cols="50"></textarea>
+    <textarea name="message" id="message" rows="8" cols="50" required></textarea>
     <br>
 
-    <input type="submit" class="wow btn such create" value="Very Create">
+    <input type="submit" class="wow btn such create" value="Very Create" required>
 </form>

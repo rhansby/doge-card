@@ -19,4 +19,8 @@ window.onload = function() {
         });
     };
     setInterval(flash, 150);
+
+    Array.prototype.forEach.call(document.getElementsByTagName('select'), function(el) {
+        el.selectedIndex = -1;
+    });
 };
