@@ -10,8 +10,14 @@ body {
     background-color: blanchedalmond;
 }
 
+/* Wow, iOS hates shibes and has no Comic Sans?! */
+@font-face {
+    font-family: 'Comic Sans MS iOS';
+    src: url(ComicSansMS.ttf);
+}
+
 body, button {
-    font-family: 'Comic Sans MS', 'Comic Sans', Chalkboard, Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Sans MS iOS', 'Comic Sans', Chalkboard, Arial, sans-serif;
 }
 
 a {
