@@ -162,6 +162,10 @@ form {
         background-image: url(/img/birthday.jpg);
         color: white;
     }
+    .card-theme-general {
+        background-image: url(/img/general.jpg);
+        color: green;
+    }
     .card-theme-valentine {
         background-image: url(/img/valentine.jpg);
         color: red;
@@ -292,6 +296,9 @@ form {
 @media (max-width: 610px) {
     .card-theme-birthday {
         background-image: url(/img/birthday-portrait.jpg);
+    }
+    .card-theme-general {
+        background-image: url(/img/general-portrait.jpg);
     }
     .card-theme-valentine {
         background-image: url(/img/valentine-portrait.jpg);

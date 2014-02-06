@@ -44,12 +44,13 @@ var generateRandomID = function() {
 
     // TODO: Search database to make sure a card with this key does not exist
     return id;
-}
+};
 
 var themeToTitle = {
     birthday: 'Wow such happy birfday! very +7 doge-years!',
+    general: 'Wow very greeting, best shibes 5ever! #bsf',
     valentine: 'Wow so happy valentine\'s day!!!'
-}
+};
 
 
 // Wow, rest of app:
@@ -69,8 +70,6 @@ such_app.get('/', function (req, res) {
 });
 
 such_app.get('/view/:such_card_id', function (req, res) {
-    console.log(req.params.such_card_id);
-
     Card.find({id: req.params.such_card_id}, function(error, cards) {
         if (cards.length < 1) {
             res.render('404');
