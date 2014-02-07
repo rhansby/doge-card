@@ -52,6 +52,15 @@ var themeToTitle = {
     valentine: 'Wow so happy valentine\'s day!!!'
 };
 
+String.prototype.escapeHTML = function() {
+    return this
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+};
+
 
 // Wow, rest of app:
 such_app.engine('handlebars', so_handlebars({defaultLayout: 'main'}));
@@ -81,7 +90,7 @@ such_app.get('/view/:such_card_id', function (req, res) {
                 title: themeToTitle[card.theme],
                 to: card.to,
                 from: card.from,
-                message: card.message
+                message: card.message.replace(/\n/g, '<br>\n')
             });
         }
     });
@@ -95,6 +104,11 @@ such_app.post('/create', function (req, res) {
     var body = req.body;
     // TODO: validate body.theme further
     if (body.theme && body.to && body.from && body.message) {
+        body.theme = body.theme.escapeHTML();
+        body.to = body.to.escapeHTML();
+        body.from = body.from.escapeHTML();
+        body.message = body.message.escapeHTML();
+
         body.id = generateRandomID();
         var card = new Card(body);
         card.save(function() {
