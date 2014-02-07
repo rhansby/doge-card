@@ -1,26 +1,41 @@
 <h2 class="very sub-header">Wow Create Such Card</h2>
 
 <form action="" method="POST">
-    <label for="theme">Theme:</label>
-    <select name="theme" id="theme" required>
-        <option value="birthday">So Happy Birfday</option>
-        <option value="general">Such Generic Greeting Card</option>
-        <option value="valentine">Very Valentine's Day</option>
-    </select>
-    <br>
+    <fieldset>
+        <div>
+            <label for="theme">Theme</label>
+            <div>
+                <select id="theme" name="theme" required>
+                    <option value="birthday">So Happy Birfday</option>
+                    <option value="general">Such Generic Greeting Card</option>
+                    <option value="valentine">Very Valentine's Day</option>
+                </select>
+            </div>
+        </div>
 
-    <label for="to">To:</label>
-    <input type="text" name="to" id="to" required>
-    <br>
+        <div>
+            <label for="to">To:</label>
+            <div>
+                <input type="text" id="to" name="to" required>
+            </div>
+        </div>
 
-    <label for="from">From:</label>
-    <input type="text" name="from" id="from" required>
-    <br>
+        <div>
+            <label for="from">From:</label>
+            <div>
+                <input type="text" id="from" name="from" required>
+            </div>
+        </div>
 
-    <label for="message">Message:</label>
-    <br>
-    <textarea name="message" id="message" rows="8" cols="50" required></textarea>
-    <br>
+        <div>
+            <label for="message">Message:</label>
+            <div>
+                <textarea id="message" name="message"></textarea>
+            </div>
+        </div>
 
-    <input type="submit" class="wow btn such create" value="Very Create" required>
+        <div class="many buttons">
+            <input type="submit" class="wow btn such create" value="Very Create">
+        </div>
+    </fieldset>
 </form>

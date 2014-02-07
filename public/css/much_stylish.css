@@ -114,6 +114,7 @@ h1, h2 {
     font-size: 16pt;
     padding: 10px 16px;
     text-align: center;
+    -webkit-appearance: none; /* wow such iOS hack */
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -154,7 +155,12 @@ footer {
 
 form {
     margin: auto;
-    width: 50%;
+    max-width: 400px;
+}
+textarea {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 80px;
 }
 
 .card {
@@ -361,6 +367,12 @@ form {
     }
     .sub-header {
         font-size: 16pt;
+    }
+    form {
+        width: 95%;
+    }
+    textarea {
+        width: 80%;
     }
     .btn {
         display: block;
