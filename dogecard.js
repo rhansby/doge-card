@@ -30,7 +30,7 @@ var card_schema = new many_mongoose.Schema({
     Card = many_mongoose.model('Card', card_schema);
 
 
-// Very helper function:
+// Very helper functions:
 var generateRandomID = function() {
     var possible_doge = ['wow', 'such', 'very', 'many', 'much', 'so'],
         possible_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',
@@ -50,6 +50,11 @@ var themeToTitle = {
     birthday: 'Wow such happy birfday! very +7 doge-years!',
     general: 'Wow very greeting, best shibes 5ever! #bsf',
     valentine: 'Wow so happy valentine\'s day!!!'
+};
+
+var isValidTheme = function(theme) {
+    var valid_themes = Object.keys(themeToTitle);
+    return (valid_themes.indexOf(theme) >= 0);
 };
 
 String.prototype.escapeHTML = function() {
@@ -79,6 +84,7 @@ such_app.get('/', function (req, res) {
 });
 
 such_app.get('/view/:such_card_id', function (req, res) {
+    // TODO: use findOne
     Card.find({id: req.params.such_card_id}, function(error, cards) {
         if (cards.length < 1) {
             res.render('404');
@@ -102,8 +108,7 @@ such_app.get('/create', function (req, res) {
 
 such_app.post('/create', function (req, res) {
     var body = req.body;
-    // TODO: validate body.theme further
-    if (body.theme && body.to && body.from && body.message) {
+    if (body.theme && isValidTheme(body.theme) && body.to && body.from && body.message) {
         body.theme = body.theme.escapeHTML();
         body.to = body.to.escapeHTML();
         body.from = body.from.escapeHTML();
@@ -116,7 +121,6 @@ such_app.post('/create', function (req, res) {
         });
     }
     else {
-        // TODO: Indicate failure.
         res.render('create', {
             error: 'Wow such oops. Something is missing or wrong. Such try again.',
             theme: body.theme,
