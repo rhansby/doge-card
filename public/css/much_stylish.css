@@ -71,7 +71,7 @@ h1, h2 {
             position: absolute;
         }
         .prop-birthday {
-            background-image: url(/img/prop-birthday.png);
+            background-image: url(/img/themes/birthday/birthday-prop.png);
             background-size: 143px 219px;
             width: 143px;
             height: 219px;
@@ -79,7 +79,7 @@ h1, h2 {
             left: 113px;
         }
         .prop-general {
-            background-image: url(/img/prop-general.png);
+            background-image: url(/img/themes/general/general-prop.png);
             background-size: 188px 100px;
             width: 188px;
             height: 100px;
@@ -90,7 +90,7 @@ h1, h2 {
                     transform: skew(5deg, 7deg);
         }
         .prop-valentine {
-            background-image: url(/img/prop-valentine.png);
+            background-image: url(/img/themes/valentine/valentine-prop.png);
             background-size: 200px;
             width: 200px;
             height: 200px;
@@ -172,15 +172,15 @@ form {
                 transform: rotate(-2deg);
     }
     .card-theme-birthday {
-        background-image: url(/img/birthday.jpg);
+        background-image: url(/img/themes/birthday/birthday.jpg);
         color: white;
     }
     .card-theme-general {
-        background-image: url(/img/general.jpg);
+        background-image: url(/img/themes/general/general.jpg);
         color: green;
     }
     .card-theme-valentine {
-        background-image: url(/img/valentine.jpg);
+        background-image: url(/img/themes/valentine/valentine.jpg);
         color: red;
     }
         .card-header {
@@ -322,13 +322,13 @@ form {
 
 @media (max-width: 610px) {
     .card-theme-birthday {
-        background-image: url(/img/birthday-portrait.jpg);
+        background-image: url(/img/themes/birthday/birthday-portrait.jpg);
     }
     .card-theme-general {
-        background-image: url(/img/general-portrait.jpg);
+        background-image: url(/img/themes/general/general-portrait.jpg);
     }
     .card-theme-valentine {
-        background-image: url(/img/valentine-portrait.jpg);
+        background-image: url(/img/themes/valentine/valentine-portrait.jpg);
     }
         .card-single {
             background-size: 300px 500px;
