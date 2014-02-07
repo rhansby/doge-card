@@ -78,6 +78,17 @@ h1, h2 {
             top: -79px;
             left: 113px;
         }
+        .prop-general {
+            background-image: url(/img/prop-general.png);
+            background-size: 188px 100px;
+            width: 188px;
+            height: 100px;
+            top: 269px;
+            left: 31px;
+            -webkit-transform: skew(5deg, 7deg);
+               -moz-transform: skew(5deg, 7deg);
+                    transform: skew(5deg, 7deg);
+        }
         .prop-valentine {
             background-image: url(/img/prop-valentine.png);
             background-size: 200px;
@@ -85,9 +96,9 @@ h1, h2 {
             height: 200px;
             top: 93px;
             left: 23px;
-            -webkit-transform: rotate(15deg);
-               -moz-transform: rotate(15deg);
-                    transform: rotate(15deg);
+            -webkit-transform: rotate(5deg);
+               -moz-transform: rotate(5deg);
+                    transform: rotate(5deg);
         }
 
 .buttons {
@@ -239,6 +250,13 @@ form {
                 top: -63px;
                 left: 90px;
             }
+            .prop-general {
+                background-size: 150px 80px;
+                width: 150px;
+                height: 80px;
+                top: 215px;
+                left: 25px;
+            }
             .prop-valentine {
                 background-size: 160px;
                 width: 160px;
@@ -285,6 +303,13 @@ form {
                 height: 110px;
                 top: -40px;
                 left: 57px;
+            }
+            .prop-general {
+                background-size: 94px 50px;
+                width: 94px;
+                height: 50px;
+                top: 135px;
+                left: 16px;
             }
             .prop-valentine {
                 background-size: 100px;
