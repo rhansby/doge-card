@@ -20,7 +20,15 @@ window.onload = function() {
     };
     setInterval(flash, 150);
 
-    Array.prototype.forEach.call(document.getElementsByTagName('select'), function(el) {
-        el.selectedIndex = -1;
-    });
+    /* Wow, reset select tag to choice from before form submission failure */
+    var prev_theme_el = document.getElementById('previously-selected-theme');
+    if (prev_theme_el) {
+        var prev_theme = prev_theme_el.innerHTML;
+        var select = document.getElementById('theme');
+        Array.prototype.forEach.call(select, function(el) {
+            if (el.value === prev_theme) {
+                el.selected = true;
+            }
+        });
+    }
 };

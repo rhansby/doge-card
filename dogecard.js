@@ -117,7 +117,13 @@ such_app.post('/create', function (req, res) {
     }
     else {
         // TODO: Indicate failure.
-        res.render('create');
+        res.render('create', {
+            error: 'Wow such oops. Something is missing or wrong. Such try again.',
+            theme: body.theme,
+            to: body.to,
+            from: body.from,
+            message: body.message
+        });
     }
 });
 

@@ -53,6 +53,11 @@ h1, h2 {
     margin-top: 0;
 }
 
+.error {
+    color: red;
+    text-align: center;
+}
+
 .doge {
     background-image: url(/img/doge.png);
     background-repeat: no-repeat;

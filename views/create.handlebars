@@ -1,10 +1,15 @@
 <h2 class="very sub-header">Wow Create Such Card</h2>
 
+{{#if error}}
+    <h3 class="very error">{{error}}</h3>
+{{/if}}
+
 <form action="" method="POST">
     <fieldset>
         <div>
             <label for="theme">Theme</label>
             <div>
+                <span id="previously-selected-theme" style="display:none;">{{theme}}</span>
                 <select id="theme" name="theme" required>
                     <option value="birthday">So Happy Birfday</option>
                     <option value="general">Such Generic Greeting Card</option>
@@ -16,21 +21,21 @@
         <div>
             <label for="to">To:</label>
             <div>
-                <input type="text" id="to" name="to" required>
+                <input type="text" id="to" name="to" value="{{to}}" required>
             </div>
         </div>
 
         <div>
             <label for="from">From:</label>
             <div>
-                <input type="text" id="from" name="from" required>
+                <input type="text" id="from" name="from" value="{{from}}" required>
             </div>
         </div>
 
         <div>
             <label for="message">Message:</label>
             <div>
-                <textarea id="message" name="message"></textarea>
+                <textarea id="message" name="message">{{message}}</textarea>
             </div>
         </div>
 
