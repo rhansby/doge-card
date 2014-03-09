@@ -94,6 +94,14 @@ h1, h2 {
                -moz-transform: skew(5deg, 7deg);
                     transform: skew(5deg, 7deg);
         }
+        .prop-stpattys {
+            background-image: url(/img/themes/stpattys/stpattys-prop.png);
+            background-size: 255px 403px;
+            width: 255px;
+            height: 403px;
+            top: -55px;
+            left: 33px;
+        }
         .prop-valentine {
             background-image: url(/img/themes/valentine/valentine-prop.png);
             background-size: 200px;
@@ -190,6 +198,10 @@ textarea {
         background-image: url(/img/themes/general/general.jpg);
         color: green;
     }
+    .card-theme-stpattys {
+        background-image: url(/img/themes/stpattys/stpattys.jpg);
+        color: green;
+    }
     .card-theme-valentine {
         background-image: url(/img/themes/valentine/valentine.jpg);
         color: red;
@@ -268,6 +280,13 @@ textarea {
                 top: 215px;
                 left: 25px;
             }
+            .prop-stpattys {
+                background-size: 204px 322px;
+                width: 204px;
+                height: 322px;
+                top: -44px;
+                left: 26px;
+            }
             .prop-valentine {
                 background-size: 160px;
                 width: 160px;
@@ -322,6 +341,13 @@ textarea {
                 top: 135px;
                 left: 16px;
             }
+            .prop-stpattys {
+                background-size: 128px 202px;
+                width: 128px;
+                height: 202px;
+                top: -28px;
+                left: 17px;
+            }
             .prop-valentine {
                 background-size: 100px;
                 width: 100px;
@@ -337,6 +363,9 @@ textarea {
     }
     .card-theme-general {
         background-image: url(/img/themes/general/general-portrait.jpg);
+    }
+    .card-theme-stpattys {
+        background-image: url(/img/themes/stpattys/stpattys-portrait.jpg);
     }
     .card-theme-valentine {
         background-image: url(/img/themes/valentine/valentine-portrait.jpg);

@@ -49,6 +49,7 @@ var generateRandomID = function() {
 var themeToTitle = {
     birthday: 'Wow such happy birfday! very +7 doge-years!',
     general: 'Wow very greeting, best shibes 5ever! #bsf',
+    stpattys: 'Wow such lucky charms',
     valentine: 'Wow so happy valentine\'s day!!!'
 };
 
