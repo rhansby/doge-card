@@ -88,11 +88,30 @@ such_app.get('/', function (req, res) {
     res.render('home');
 });
 
+// JSON endpoint. Needs to be before regular endpoint for routing reasons.
+such_app.get('/view/:such_card_id.json', function (req, res) {
+    Card.findOne({id: req.params.such_card_id}, function(error, card) {
+        if (! card || error) {
+            res.status(404).json({error: 'wow such 404'});
+            return;
+        }
+
+        res.json({
+            theme: card.theme,
+            from: card.from,
+            to: card.to,
+            message: card.message,
+            date: card.date,
+            views: card.views
+        });
+    });
+});
+
 such_app.get('/view/:such_card_id', function (req, res) {
     // Fetch card and increment its views simultaneously
     Card.findOneAndUpdate({id: req.params.such_card_id}, {$inc: {views: 1}}, function(error, card) {
         if (! card || error) {
-            res.render('404');
+            res.status(404).render('404');
             return;
         }
 
