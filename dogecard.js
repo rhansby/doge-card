@@ -22,6 +22,10 @@ var card_schema = new many_mongoose.Schema({
     to: String,
     from: String,
     message: String,
+    views: {
+        type: Number,
+        default: 0
+    },
     date: {
         type: Date,
         default: Date.now
@@ -85,21 +89,20 @@ such_app.get('/', function (req, res) {
 });
 
 such_app.get('/view/:such_card_id', function (req, res) {
-    // TODO: use findOne
-    Card.find({id: req.params.such_card_id}, function(error, cards) {
-        if (cards.length < 1) {
+    // Fetch card and increment its views simultaneously
+    Card.findOneAndUpdate({id: req.params.such_card_id}, {$inc: {views: 1}}, function(error, card) {
+        if (! card || error) {
             res.render('404');
+            return;
         }
-        else {
-            var card = cards[0];
-            res.render('card', {
-                theme: card.theme,
-                title: themeToTitle[card.theme],
-                to: card.to,
-                from: card.from,
-                message: card.message.replace(/\n/g, '<br>\n')
-            });
-        }
+
+        res.render('card', {
+            theme: card.theme,
+            title: themeToTitle[card.theme],
+            to: card.to,
+            from: card.from,
+            message: card.message.replace(/\n/g, '<br>\n')
+        });
     });
 });
 
