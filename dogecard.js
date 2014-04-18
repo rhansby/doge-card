@@ -13,7 +13,7 @@ connect();
 
 many_mongoose.connection.on('error', console.error.bind(console, 'Wow such DB connection error:'));
 many_mongoose.connection.on('disconnected', function() {
-  connect();
+    connect();
 });
 
 var card_schema = new many_mongoose.Schema({
@@ -52,6 +52,7 @@ var generateRandomID = function() {
 
 var themeToTitle = {
     birthday: 'Wow such happy birfday! very +7 doge-years!',
+    easter: 'Wow many Happy Easter! very chocolate',
     general: 'Wow very greeting, best shibes 5ever! #bsf',
     stpattys: 'Wow such lucky charms',
     valentine: 'Wow so happy valentine\'s day!!!'

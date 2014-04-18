@@ -83,6 +83,14 @@ h1, h2 {
             top: -79px;
             left: 113px;
         }
+        .prop-easter {
+            background-image: url(/img/themes/easter/easter-prop.png);
+            background-size: 298px 305px;
+            width: 298px;
+            height: 305px;
+            top: -108px;
+            left: 66px;
+        }
         .prop-general {
             background-image: url(/img/themes/general/general-prop.png);
             background-size: 188px 100px;
@@ -194,6 +202,10 @@ textarea {
         background-image: url(/img/themes/birthday/birthday.jpg);
         color: white;
     }
+    .card-theme-easter {
+        background-image: url(/img/themes/easter/easter.jpg);
+        color: pink;
+    }
     .card-theme-general {
         background-image: url(/img/themes/general/general.jpg);
         color: green;
@@ -273,6 +285,13 @@ textarea {
                 top: -63px;
                 left: 90px;
             }
+            .prop-easter {
+                background-size: 238px 244px;
+                width: 238px;
+                height: 244px;
+                top: -86px;
+                left: 53px;
+            }
             .prop-general {
                 background-size: 150px 80px;
                 width: 150px;
@@ -333,6 +352,13 @@ textarea {
                 height: 110px;
                 top: -40px;
                 left: 57px;
+            }
+            .prop-easter {
+                background-size: 149px 153px;
+                width: 149px;
+                height: 153px;
+                top: -54px;
+                left: 33px;
             }
             .prop-general {
                 background-size: 94px 50px;
