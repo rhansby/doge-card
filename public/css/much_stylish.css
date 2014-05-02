@@ -83,6 +83,14 @@ h1, h2 {
             top: -79px;
             left: 113px;
         }
+        .prop-cinco {
+            background-image: url(/img/themes/cinco/cinco-prop.png);
+            background-size: 536px 265px;
+            width: 536px;
+            height: 265px;
+            top: -110px;
+            left: -71px;
+        }
         .prop-easter {
             background-image: url(/img/themes/easter/easter-prop.png);
             background-size: 298px 305px;
@@ -202,6 +210,10 @@ textarea {
         background-image: url(/img/themes/birthday/birthday.jpg);
         color: white;
     }
+    .card-theme-cinco {
+        background-image: url(/img/themes/cinco/cinco.jpg);
+        color: green;
+    }
     .card-theme-easter {
         background-image: url(/img/themes/easter/easter.jpg);
         color: pink;
@@ -285,6 +297,13 @@ textarea {
                 top: -63px;
                 left: 90px;
             }
+            .prop-cinco {
+                background-size: 429px 212px;
+                width: 429px;
+                height: 212px;
+                top: -88px;
+                left: -57px;
+            }
             .prop-easter {
                 background-size: 238px 244px;
                 width: 238px;
@@ -353,6 +372,13 @@ textarea {
                 top: -40px;
                 left: 57px;
             }
+            .prop-cinco {
+                background-size: 268px 133px;
+                width: 268px;
+                height: 133px;
+                top: -55px;
+                left: -36px;
+            }
             .prop-easter {
                 background-size: 149px 153px;
                 width: 149px;
@@ -386,6 +412,9 @@ textarea {
 @media (max-width: 610px) {
     .card-theme-birthday {
         background-image: url(/img/themes/birthday/birthday-portrait.jpg);
+    }
+    .card-theme-cinco {
+        background-image: url(/img/themes/cinco/cinco-portrait.jpg);
     }
     .card-theme-general {
         background-image: url(/img/themes/general/general-portrait.jpg);
