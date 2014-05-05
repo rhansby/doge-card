@@ -33,6 +33,15 @@ var card_schema = new many_mongoose.Schema({
 }),
     Card = many_mongoose.model('Card', card_schema);
 
+var subscriber_schema = new many_mongoose.Schema({
+    email: {
+        type: String,
+        unique: true
+    },
+    is_subscribed: Boolean
+}),
+    Subscriber = many_mongoose.model('Subscriber', subscriber_schema);
+
 
 // Very helper functions:
 var generateRandomID = function() {
@@ -154,6 +163,24 @@ such_app.post('/create', function (req, res) {
             message: body.message
         });
     }
+});
+
+such_app.get('/subscribe', function (req, res) {
+    var email = req.query.email;
+
+    // Wow such email verification:
+    // One or more chars + @ + one or more chars + . + one or more chars
+    var is_valid = /.+@.+\..+$/.test(email);
+
+    if (! is_valid) {
+        res.send(400, 'wow');
+        return;
+    }
+
+    var subscriber = new Subscriber({email: email, is_subscribed: true});
+    subscriber.save(function() {
+        res.send(201, 'wow');
+    });
 });
 
 such_app.get('*', function(req, res){

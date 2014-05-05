@@ -31,4 +31,32 @@ window.onload = function() {
             }
         });
     }
+
+    // Wow such subscription button handling:
+    var subscribe_click = document.getElementById('subscribe-click');
+    subscribe_click.onclick = function() {
+        subscribe_click.style.display = 'none';
+        document.getElementById('form-subscribe').style.display = 'block';
+    };
+
+    var subscribe_form = document.getElementById('form-subscribe');
+    subscribe_form.onsubmit = function(event) {
+        // Wow no traditional form submission, only AJAX:
+        event.preventDefault();
+
+        // Wow such non-support for IE <= 6
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status == 201) {
+                console.log(xmlhttp.responseText);
+
+                subscribe_form.style.display = 'none';
+                document.getElementById('subscribe-success').style.display = 'block';
+            }
+        }
+
+        xmlhttp.open('GET', '/subscribe?email=' + document.getElementById('email').value, true);
+        xmlhttp.send();
+    }
 };

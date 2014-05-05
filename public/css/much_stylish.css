@@ -54,6 +54,10 @@ h1, h2 {
     position: relative;
     z-index: 10;
 }
+    .sub-header-subscribe {
+        color: cyan;
+        margin-top: 40px;
+    }
 
 .error {
     color: red;
