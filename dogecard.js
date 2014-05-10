@@ -1,4 +1,5 @@
-var many_mongoose = require('mongoose'),
+var such_config = require('./such_config'),
+    many_mongoose = require('mongoose'),
     very_express = require('express'),
     so_handlebars = require('express3-handlebars'),
     much_http = require('http'),
@@ -7,7 +8,7 @@ var many_mongoose = require('mongoose'),
 
 // Much database configuration:
 var connect = function() {
-    many_mongoose.connect('mongodb://localhost/doge-card');
+    many_mongoose.connect('mongodb://localhost:' + such_config.db.port + '/doge-card');
 };
 connect();
 
@@ -90,10 +91,10 @@ such_app.set('view engine', 'handlebars');
 
 such_app.use(very_express.bodyParser());
 such_app.use(very_express.static(__dirname + '/public'));
-such_app.set('port', process.env.PORT || 3000);
+such_app.set('port', such_config.port);
 
 much_http.createServer(such_app).listen(such_app.get('port'), function() {
-  console.log('Wow very listen on port ' + such_app.get('port'));
+    console.log('Wow very listen on port ' + such_app.get('port'));
 });
 
 such_app.get('/', function (req, res) {
