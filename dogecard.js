@@ -64,6 +64,7 @@ var themeToTitle = {
     cinco: 'Wow mucho Cinco de Mayo! Muy celebración',
     easter: 'Wow many Happy Easter! very chocolate',
     general: 'Wow very greeting, best shibes 5ever! #bsf',
+    mother: 'Wow many happy Mother\'s Day! Very luv',
     stpattys: 'Wow such lucky charms',
     valentine: 'Wow so happy valentine\'s day!!!'
 };

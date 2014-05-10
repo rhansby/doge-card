@@ -116,6 +116,14 @@ h1, h2 {
                -moz-transform: skew(5deg, 7deg);
                     transform: skew(5deg, 7deg);
         }
+        .prop-mother {
+            background-image: url(/img/themes/mother/mother-prop.png);
+            background-size: 350px 467px;
+            width: 350px;
+            height: 467px;
+            top: 5px;
+            left: -15px;
+        }
         .prop-stpattys {
             background-image: url(/img/themes/stpattys/stpattys-prop.png);
             background-size: 255px 403px;
@@ -228,6 +236,10 @@ textarea {
         background-image: url(/img/themes/general/general.jpg);
         color: green;
     }
+    .card-theme-mother {
+        background-image: url(/img/themes/mother/mother.jpg);
+        color: red;
+    }
     .card-theme-stpattys {
         background-image: url(/img/themes/stpattys/stpattys.jpg);
         color: green;
@@ -324,6 +336,13 @@ textarea {
                 top: 215px;
                 left: 25px;
             }
+            .prop-mother {
+                background-size: 280px 374px;
+                width: 280px;
+                height: 374px;
+                top: 4px;
+                left: -12px;
+            }
             .prop-stpattys {
                 background-size: 204px 322px;
                 width: 204px;
@@ -398,6 +417,13 @@ textarea {
                 height: 50px;
                 top: 135px;
                 left: 16px;
+            }
+            .prop-mother {
+                background-size: 175px 234px;
+                width: 175px;
+                height: 234px;
+                top: 3px;
+                left: -8px;
             }
             .prop-stpattys {
                 background-size: 128px 202px;
