@@ -105,6 +105,17 @@ h1, h2 {
             top: -108px;
             left: 66px;
         }
+        .prop-father {
+            background-image: url(/img/themes/father/father-prop.png);
+            background-size: 100px 176px;
+            width: 100px;
+            height: 176px;
+            top: 305px;
+            left: 85px;
+            -webkit-transform: rotate(11deg);
+               -moz-transform: rotate(11deg);
+                    transform: rotate(11deg);
+        }
         .prop-general {
             background-image: url(/img/themes/general/general-prop.png);
             background-size: 188px 100px;
@@ -232,6 +243,10 @@ textarea {
         background-image: url(/img/themes/easter/easter.jpg);
         color: pink;
     }
+    .card-theme-father {
+        background-image: url(/img/themes/father/father.jpg);
+        color: black;
+    }
     .card-theme-general {
         background-image: url(/img/themes/general/general.jpg);
         color: green;
@@ -329,6 +344,13 @@ textarea {
                 top: -86px;
                 left: 53px;
             }
+            .prop-father {
+                background-size: 80px 141px;
+                width: 80px;
+                height: 176px;
+                top: 242px;
+                left: 72px;
+            }
             .prop-general {
                 background-size: 150px 80px;
                 width: 150px;
@@ -410,6 +432,13 @@ textarea {
                 height: 153px;
                 top: -54px;
                 left: 33px;
+            }
+            .prop-father {
+                background-size: 50px 88px;
+                width: 50px;
+                height: 88px;
+                top: 154px;
+                left: 43px;
             }
             .prop-general {
                 background-size: 94px 50px;
