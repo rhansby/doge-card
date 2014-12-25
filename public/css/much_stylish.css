@@ -89,6 +89,17 @@ h1, h2 {
             top: -79px;
             left: 113px;
         }
+        .prop-christmas {
+            background-image: url(/img/themes/christmas/christmas-prop.png);
+            background-size: 306px 236px;
+            width: 306px;
+            height: 236px;
+            top: -73px;
+            left: 22px;
+            -webkit-transform: rotate(14deg);
+               -moz-transform: rotate(14deg);
+                    transform: rotate(14deg);
+        }
         .prop-cinco {
             background-image: url(/img/themes/cinco/cinco-prop.png);
             background-size: 536px 265px;
@@ -235,6 +246,10 @@ textarea {
         background-image: url(/img/themes/birthday/birthday.jpg);
         color: white;
     }
+    .card-theme-christmas {
+        background-image: url(/img/themes/christmas/christmas.jpg);
+        color: white;
+    }
     .card-theme-cinco {
         background-image: url(/img/themes/cinco/cinco.jpg);
         color: green;
@@ -330,6 +345,13 @@ textarea {
                 top: -63px;
                 left: 90px;
             }
+            .prop-christmas {
+                background-size: 245px 189px;
+                width: 245px;
+                height: 189px;
+                top: -58px;
+                left: 18px;
+            }
             .prop-cinco {
                 background-size: 429px 212px;
                 width: 429px;
@@ -419,6 +441,13 @@ textarea {
                 top: -40px;
                 left: 57px;
             }
+            .prop-christmas {
+                background-size: 153px 118px;
+                width: 153px;
+                height: 118px;
+                top: -37px;
+                left: 11px;
+            }
             .prop-cinco {
                 background-size: 268px 133px;
                 width: 268px;
@@ -473,6 +502,9 @@ textarea {
 @media (max-width: 610px) {
     .card-theme-birthday {
         background-image: url(/img/themes/birthday/birthday-portrait.jpg);
+    }
+    .card-theme-christmas {
+        background-image: url(/img/themes/christmas/christmas-portrait.jpg);
     }
     .card-theme-cinco {
         background-image: url(/img/themes/cinco/cinco-portrait.jpg);

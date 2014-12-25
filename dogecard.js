@@ -62,6 +62,7 @@ var generateRandomID = function() {
 
 var themeToTitle = {
     birthday: 'Wow such happy birfday! very +7 doge-years!',
+    christmas: 'Wow such Merry Christmas! Many season\'s tidings wow',
     cinco: 'Wow mucho Cinco de Mayo! Muy celebración',
     easter: 'Wow many Happy Easter! very chocolate',
     father: 'Wow many happy Father\'s Day! Tnx to all papa shibes',
