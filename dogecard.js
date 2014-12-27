@@ -12,7 +12,10 @@ var connect = function() {
 };
 connect();
 
-many_mongoose.connection.on('error', console.error.bind(console, 'Wow such DB connection error:'));
+many_mongoose.connection.on('error', function(err) {
+    console.error('Wow such DB connection error:', err);
+    process.exit(1);
+});
 many_mongoose.connection.on('disconnected', function() {
     connect();
 });
